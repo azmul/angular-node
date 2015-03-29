@@ -1,0 +1,39 @@
+/* Cross Browser Support */
+* {
+
+  margin: 0;
+
+  padding: 0;
+  
+  box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+  
+  height: 100%;
+}
+
+body {
+  
+  height: 100%;
+}
+
+.header {
+
+  width: 100%;
+  height: 203px;
+  background-image: url(../images/header-image.png);
+  background-repeat: round;
+  position: relative;
+}
+
+/*Home page slide portion*/
+
+.carousel-control.right,
+.carousel-control.left {
+
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0, rgba(0,0,0,0) 100%);
+  
+}
