@@ -1,7 +1,7 @@
 
 <div ng-include="'templates-common/header.html'"></div>
 
-<div class="container main-body">
+<div class="container slide">
 	<div class="main">
 		<h1>Carpet Cleaning</h1>
 		<h1>PRICE IS WHAT YOU PAY, VALUE IS WHAT YOU GET</h1>
@@ -16,25 +16,29 @@
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 						<img class="img-responsive" src="images/slide.png" alt="Slide Image">
 					</div>
-					<div class="col-md-6">
-						<p>I can tell you right now that I am not the cheapest cleaner in town but my prices are reasonable, my work top-rate and my service extraordinary.</p>
+					<div class="col-md-6  col-sm-6 comment">
+					    <span class="border"></span>
+						<p> <i>I can tell you right now that I am not the cheapest cleaner in town but my prices are reasonable, my work top-rate and my service extraordinary.</i></p>
 						<h5>~ Gary Larson </h5>
 						<h6>Owner &amp; Operator since 1997</h6>
+						<span class="border"></span>
 					</div>
 				</div>
 			</div>
 			<div class="item">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 						<img class="img-responsive" src="images/slide.png" alt="Slide image">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6 comment">
+					    <span class="border"></span>
 						<p>I can tell you right now that I am not the cheapest cleaner in town but my prices are reasonable, my work top-rate and my service extraordinary.</p>
 						<h5>~ Gary Larson </h5>
 						<h6>Owner &amp; Operator since 1997</h6>
+						<span class="border"></span>
 					</div>
 				</div>
 			</div>
@@ -50,8 +54,9 @@
 	</div>
 	
 	<!-- Main Body -->
-	<h4>Carpet Cleaning includes:</h4>
-	<div class="col-md-6">
+	<div class="main-body">	
+      <h4>Carpet Cleaning includes:</h4>     
+	<div class="col-md-7 col-sm-7">
 		<ul>
 		    <li>• Pre-vacuum with a commercial grade vacuum</li>
 	        <li>• Moving most furniture in the living area</li>
@@ -63,7 +68,7 @@
 	        <li>• Furniture replaced on styrofoam blocks to prevent carpet staining</li>
 		</ul>
 	</div>
-	<div class="col-md-5 col-md-offset-1">
+	<div class="col-md-5 col-sm-5">
 	    <ul>
 		    <li>• Renew carpet protection, a 20 cent per sq ft value</li>
             <li>• Final grooming to set pile and speed drying</li>
@@ -75,12 +80,14 @@
             <li>• All this for .37 cents a sq ft</li>
 		</ul>
 	</div>
+	</div>
+	
 
 </div>
 <div ng-include="'templates-common/footer.html'"></div>  
 
 <script>
 	$('.carousel').carousel({
-	  interval: 2000
+	  interval: 1000000
 	})
 </script>

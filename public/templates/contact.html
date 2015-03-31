@@ -1,1 +1,13 @@
-
+<div ng-include="'templates-common/header.html'"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<ul>
+			  <li ng-repeat="x in names">
+			    {{ x.Name + ', ' + x.City + ' ,'+ x.Country }}
+			  </li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div ng-include="'templates-common/footer.html'"></div>

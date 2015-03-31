@@ -1,7 +1,6 @@
 'use strict';
 /**
 *  Module
-*
 * Description
 */
 var app = angular.module('AppController', []);
@@ -19,7 +18,12 @@ app.controller('HomeCtrl',['$scope', function ($scope) {
 	 
 }]);
 
-app.controller('ContactCtrl', ['$scope', function ($scope) {
+app.controller('ContactCtrl', ['$scope','$http', function ($scope, $http) {
 	 $scope.title = 'Contact Page';
+
+	 $http.get('data/data.json')
+	      .success(function(response){
+	                                 $scope.names = response;
+	                                 });
 }]);
 
